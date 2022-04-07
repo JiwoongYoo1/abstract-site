@@ -6,11 +6,13 @@ class Site {
 		if (this.boards.find((board) => board.name === addBoard.name)) {   
             throw new Error()
         }
+        
         this.boards.push(addBoard),
-        addBoard.isBoard = true
+        addBoard.isBoard = true 
+        
     }
     findBoardByName(name) {
-        return this.boards.find((board) => board.name = name)
+        return this.boards.find((board) => board.name === name)
     }
     
 }
